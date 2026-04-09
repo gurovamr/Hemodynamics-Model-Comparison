@@ -1,0 +1,25 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  9                                     |
+|   \\  /    A nd           | Web:      www.openfoam.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Blood treated as Newtonian fluid (valid for large vessels, D > ~1 mm)
+transportModel  Newtonian;
+
+// Dynamic viscosity of blood at 37 °C: mu = 3.5e-3 Pa·s
+// Kinematic viscosity nu = mu / rho = 3.5e-3 / 1060 ≈ 3.302e-6 m^2/s
+nu              [0 2 -1 0 0 0 0]  3.302e-06;
+
+// ************************************************************************* //

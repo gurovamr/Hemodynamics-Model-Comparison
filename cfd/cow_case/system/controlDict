@@ -1,0 +1,67 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  9                                     |
+|   \\  /    A nd           | Web:      www.openfoam.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Steady-state solver.  Switch to pimpleFoam + adjust timeStep for transient.
+application     simpleFoam;
+
+startFrom       startTime;
+startTime       0;
+
+stopAt          endTime;
+endTime         500;      // iterations (simpleFoam) or seconds (pimpleFoam)
+
+deltaT          1;        // iteration step (simpleFoam) or time-step [s]
+
+writeControl    timeStep;
+writeInterval   100;
+
+purgeWrite      3;        // keep only the last 3 written time directories
+
+writeFormat     ascii;
+writePrecision  8;
+
+runTimeModifiable true;
+
+functions
+{
+    // Sample velocity and pressure along a line (centre-line proxy)
+    centerlineSample
+    {
+        type            sets;
+        libs            ("libsampling.so");
+        writeControl    writeTime;
+
+        interpolationScheme cellPoint;
+        setFormat       csv;
+
+        fields          (U p);
+
+        sets
+        (
+            mca_centerline
+            {
+                type    uniform;
+                axis    distance;
+                start   (0.000 0.000 0.000);
+                end     (0.020 0.003 0.000);
+                nPoints 50;
+            }
+        );
+    }
+}
+
+// ************************************************************************* //

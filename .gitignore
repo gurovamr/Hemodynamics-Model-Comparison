@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Matplotlib / generated figures (keep only placeholder PNGs checked in by hand)
+data/centerlines/*.png
+data/centerlines/cow_0d_results.csv
+data/centerlines/cow_1d_results.csv
+data/centerlines/comparison_summary.csv
+
+# OpenFOAM run-time files
+cfd/*/[0-9]*/
+cfd/*/[0-9]*.[0-9]*/
+cfd/*/processor*/
+cfd/*/postProcessing/
+cfd/*/log.*
+cfd/*/constant/polyMesh/
+!cfd/*/constant/polyMesh/.gitkeep
+
+# Large mesh/geometry files
+data/geometry/*.stl
+data/geometry/*.vtk
+data/geometry/*.vtp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
