@@ -1,0 +1,12 @@
+# Raw data
+data/
+
+# Large geometry files
+*.stl
+*.vtp
+*.vtu
+
+# OpenFOAM results
+processor*/
+postProcessing/
+*.foam
