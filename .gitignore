@@ -10,3 +10,4 @@ data/
 processor*/
 postProcessing/
 *.foam
+openfoam/
