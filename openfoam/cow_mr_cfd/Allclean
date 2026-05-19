@@ -1,0 +1,6 @@
+#!/bin/bash
+# Allclean — Remove all generated files and reset the case
+cd "${0%/*}" || exit 1
+rm -rf log.* processor*/ postProcessing/ 0.[0-9]* [1-9]* [1-9][0-9]*/
+rm -rf constant/polyMesh constant/extendedFeatureEdgeMesh constant/triSurface/*.eMesh
+echo "Case cleaned."

@@ -1,0 +1,18 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |
+| \\      /  F ield         | OpenFOAM
+|  \\    /   O peration     |
+|   \\  /    A nd           |
+|    \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      transportProperties;
+}
+
+viscosityModel constant;
+
+nu              0.0035;

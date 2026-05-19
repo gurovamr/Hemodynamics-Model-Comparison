@@ -1,0 +1,100 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | cow_mr_cfd — Circle of Willis MR, steady-state
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+// Velocity field [m/s]
+//
+// Inlet flow directions are the negated inward_dir vectors (flow enters against
+// the inward direction of the centerline).  Speeds are computed from published
+// literature flow rates divided by the cross-sectional area at each inlet:
+//
+//   BA:    Q = 200 mL/min → U_mean = 0.2319 m/s  (Re ≈ 301)
+//   R-ICA: Q = 300 mL/min → U_mean = 0.3172 m/s  (Re ≈ 431)
+//   L-ICA: Q = 300 mL/min → U_mean = 0.3003 m/s  (Re ≈ 419)
+//
+// inward_dir from centerline graph (unit vectors pointing into vessel):
+//   BA:    (-0.287,  0.842,  0.457)
+//   R-ICA: ( 0.264,  0.955,  0.138)
+//   L-ICA: (-0.422,  0.904,  0.065)
+//
+// Flow direction = -inward_dir (flow enters from outside the domain):
+//   BA:    ( 0.287, -0.842, -0.457)
+//   R-ICA: (-0.264, -0.955, -0.138)
+//   L-ICA: ( 0.422, -0.904, -0.065)
+//
+// fixedValue = U_mean * flow_direction
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    // ── Inlets: uniform velocity (plug flow, steady-state first estimate) ──
+    inlet_BA
+    {
+        type        fixedValue;
+        // U = 0.2319 * (0.287, -0.842, -0.457)
+        value       uniform (0.0666 -0.1953 -0.1060);
+    }
+    inlet_R_ICA
+    {
+        type        fixedValue;
+        // U = 0.3172 * (-0.264, -0.955, -0.138)
+        value       uniform (-0.0837 -0.3029 -0.0438);
+    }
+    inlet_L_ICA
+    {
+        type        fixedValue;
+        // U = 0.3003 * (0.422, -0.904, -0.065)
+        value       uniform (0.1267 -0.2715 -0.0195);
+    }
+
+    // ── Outlets: zeroGradient (pressure outlet) ───────────────────────────
+    outlet_R_PCA
+    {
+        type    zeroGradient;
+    }
+    outlet_L_PCA
+    {
+        type    zeroGradient;
+    }
+    outlet_L_MCA
+    {
+        type    zeroGradient;
+    }
+    outlet_R_ACA
+    {
+        type    zeroGradient;
+    }
+    outlet_L_ACA
+    {
+        type    zeroGradient;
+    }
+
+    // ── No-slip wall ──────────────────────────────────────────────────────
+    wall
+    {
+        type        fixedValue;
+        value       uniform (0 0 0);
+    }
+
+    // ── Background domain walls (should not exist after snappyHexMesh) ────
+    domain_walls
+    {
+        type        zeroGradient;
+    }
+}
+
+// ************************************************************************* //

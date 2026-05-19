@@ -1,0 +1,196 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | cow_mr_cfd — Circle of Willis MR, steady-state
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      snappyHexMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+castellatedMesh  true;
+snap             true;
+addLayers        true;
+
+// ── Geometry ──────────────────────────────────────────────────────────────────
+geometry
+{
+    // Wall patch (vessel walls)
+    wall
+    {
+        type    triSurfaceMesh;
+        file    "wall.stl";
+        name    wall;
+    }
+
+    // Inlet patches
+    inlet_BA     { type triSurfaceMesh; file "inlet_BA.stl";     name inlet_BA; }
+    inlet_R_ICA  { type triSurfaceMesh; file "inlet_R_ICA.stl";  name inlet_R_ICA; }
+    inlet_L_ICA  { type triSurfaceMesh; file "inlet_L_ICA.stl";  name inlet_L_ICA; }
+
+    // Outlet patches
+    outlet_R_PCA { type triSurfaceMesh; file "outlet_R_PCA.stl"; name outlet_R_PCA; }
+    outlet_L_PCA { type triSurfaceMesh; file "outlet_L_PCA.stl"; name outlet_L_PCA; }
+    outlet_L_MCA { type triSurfaceMesh; file "outlet_L_MCA.stl"; name outlet_L_MCA; }
+    outlet_R_ACA { type triSurfaceMesh; file "outlet_R_ACA.stl"; name outlet_R_ACA; }
+    outlet_L_ACA { type triSurfaceMesh; file "outlet_L_ACA.stl"; name outlet_L_ACA; }
+
+    // Search sphere used for refinement around the vessel (all geometry)
+    cow_vessel_sphere
+    {
+        type    searchableSphere;
+        centre  (-0.0065 -0.0107 -0.0017);  // mesh centroid in m
+        radius  0.055;                        // covers full CoW extent
+    }
+}
+
+// ── Castellated mesh controls ──────────────────────────────────────────────────
+castellatedMeshControls
+{
+    maxLocalCells       5000000;
+    maxGlobalCells     15000000;
+    minRefinementCells  10;
+    maxLoadUnbalance    0.10;
+    nCellsBetweenLevels 3;
+
+    features
+    (
+        { file "wall.extendedFeatureEdgeMesh";     level 2; }
+        { file "inlet_BA.extendedFeatureEdgeMesh"; level 3; }
+        { file "inlet_R_ICA.extendedFeatureEdgeMesh"; level 3; }
+        { file "inlet_L_ICA.extendedFeatureEdgeMesh"; level 3; }
+        { file "outlet_R_PCA.extendedFeatureEdgeMesh"; level 3; }
+        { file "outlet_L_PCA.extendedFeatureEdgeMesh"; level 3; }
+        { file "outlet_L_MCA.extendedFeatureEdgeMesh"; level 3; }
+        { file "outlet_R_ACA.extendedFeatureEdgeMesh"; level 3; }
+        { file "outlet_L_ACA.extendedFeatureEdgeMesh"; level 3; }
+    );
+
+    refinementSurfaces
+    {
+        // Background cell is 4 mm; level 3 = 0.5 mm; level 4 = 0.25 mm
+        wall
+        {
+            level           (3 4);   // min/max refinement levels at wall
+            patchInfo { type wall; }
+        }
+        inlet_BA     { level (4 4); patchInfo { type patch; } }
+        inlet_R_ICA  { level (4 4); patchInfo { type patch; } }
+        inlet_L_ICA  { level (4 4); patchInfo { type patch; } }
+        outlet_R_PCA { level (4 4); patchInfo { type patch; } }
+        outlet_L_PCA { level (4 4); patchInfo { type patch; } }
+        outlet_L_MCA { level (4 4); patchInfo { type patch; } }
+        outlet_R_ACA { level (4 4); patchInfo { type patch; } }
+        outlet_L_ACA { level (4 4); patchInfo { type patch; } }
+    }
+
+    refinementRegions
+    {
+        // Extra refinement inside the vessel region
+        cow_vessel_sphere
+        {
+            mode    inside;
+            levels  ((1E15 2));   // level 2 everywhere inside the sphere
+        }
+    }
+
+    // Cells near feature edges with angle > resolveFeatureAngle are refined
+    // up to the maximum surface refinement level.
+    resolveFeatureAngle 45;
+
+    // Point guaranteed to be inside the fluid domain
+    // Use a point on the BA centerline, slightly inward from the BA start
+    // BA start: (-9.2, -19.6, -15.4) mm, inward dir: (-0.287, 0.842, 0.457)
+    // Move 5 mm inward: (-9.2-1.44, -19.6+4.21, -15.4+2.29) ≈ (-10.6, -15.4, -13.1) mm
+    locationInMesh  (-0.0106 -0.0154 -0.0131);  // inside BA lumen
+
+    allowFreeStandingZoneFaces true;
+}
+
+// ── Snap controls ──────────────────────────────────────────────────────────────
+snapControls
+{
+    nSmoothPatch        5;
+    tolerance           2.0;
+    nSolveIter          50;
+    nRelaxIter          5;
+    nFeatureSnapIter    10;
+    implicitFeatureSnap false;
+    explicitFeatureSnap true;
+    multiRegionFeatureSnap false;
+}
+
+// ── Layer controls ────────────────────────────────────────────────────────────
+addLayersControls
+{
+    relativeSizes       true;
+
+    layers
+    {
+        wall
+        {
+            nSurfaceLayers  4;
+            expansionRatio  1.2;
+            finalLayerThickness 0.4;
+            minThickness    0.1;
+        }
+    }
+
+    expansionRatio          1.2;
+    finalLayerThickness     0.4;
+    minThickness            0.1;
+    nGrow                   0;
+    featureAngle            60;
+    slipFeatureAngle        30;
+    nRelaxIter              5;
+    nSmoothSurfaceNormals   1;
+    nSmoothNormals          3;
+    nSmoothThickness        10;
+    maxFaceThicknessRatio   0.5;
+    maxThicknessToMedialRatio 0.3;
+    minMedialAxisAngle      90;
+    nMedialAxisIter         3;
+    nBufferCellsNoExtrude   0;
+    nLayerIter              50;
+}
+
+// ── Mesh quality controls ──────────────────────────────────────────────────────
+meshQualityControls
+{
+    maxNonOrtho         65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave          80;
+    minVol              1e-13;
+    minTetQuality       1e-30;
+    minArea             -1;
+    minTwist            0.05;
+    minDeterminant      0.001;
+    minFaceWeight       0.05;
+    minVolRatio         0.01;
+    minTriangleTwist    -1;
+    nSmoothScale        4;
+    errorReduction      0.75;
+
+    relaxed
+    {
+        maxNonOrtho  75;
+    }
+}
+
+writeFlags
+(
+    scalarLevels
+    layerSets
+    layerFields
+);
+
+mergeTolerance 1e-6;
+
+// ************************************************************************* //

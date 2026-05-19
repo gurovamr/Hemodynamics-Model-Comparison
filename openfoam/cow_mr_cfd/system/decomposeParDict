@@ -1,0 +1,20 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | cow_mr_cfd — Circle of Willis MR, steady-state
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      decomposeParDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+numberOfSubdomains  4;
+method              scotch;
+
+// ************************************************************************* //

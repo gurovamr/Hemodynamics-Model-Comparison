@@ -1,0 +1,84 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | cow_mr_cfd — Circle of Willis MR, steady-state
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      surfaceFeaturesDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+// Extract feature edges from each STL patch for explicit feature snapping in
+// snappyHexMesh.  includedAngle 150 → mark edges where face normals differ
+// by more than 30°.  geometricTestOnly skips region-edge detection (not
+// needed for clean single-region STLs).
+
+wall
+{
+    surfaces        ( "wall.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+inlet_BA
+{
+    surfaces        ( "inlet_BA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+inlet_R_ICA
+{
+    surfaces        ( "inlet_R_ICA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+inlet_L_ICA
+{
+    surfaces        ( "inlet_L_ICA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+outlet_R_PCA
+{
+    surfaces        ( "outlet_R_PCA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+outlet_L_PCA
+{
+    surfaces        ( "outlet_L_PCA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+outlet_L_MCA
+{
+    surfaces        ( "outlet_L_MCA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+outlet_R_ACA
+{
+    surfaces        ( "outlet_R_ACA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+outlet_L_ACA
+{
+    surfaces        ( "outlet_L_ACA.stl" );
+    includedAngle   150;
+    geometricTestOnly yes;
+}
+
+// ************************************************************************* //

@@ -1,0 +1,81 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | cow_mr_cfd — Circle of Willis MR, steady-state
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     simpleFoam;
+
+startFrom       startTime;
+startTime       0;
+
+stopAt          endTime;
+endTime         1000;    // SIMPLE iterations (not time steps)
+
+deltaT          1;
+writeControl    timeStep;
+writeInterval   100;
+purgeWrite      3;       // keep last 3 checkpoints only
+
+writeFormat     ascii;
+writePrecision  8;
+writeCompression off;
+timeFormat      general;
+timePrecision   6;
+
+runTimeModifiable true;
+
+functions
+{
+    // ── Wall shear stress ──────────────────────────────────────────────────
+    wallShearStress
+    {
+        type            wallShearStress;
+        libs            (fieldFunctionObjects);
+        writeControl    writeTime;
+        patches         (wall);
+    }
+
+    // ── Flow rate through each patch ──────────────────────────────────────
+    flowRates
+    {
+        type            surfaceFieldValue;
+        libs            (fieldFunctionObjects);
+        writeControl    writeTime;
+        operation       sum;
+        regionType      patch;
+        fields          (phi);
+
+        patches
+        (
+            inlet_BA
+            inlet_R_ICA
+            inlet_L_ICA
+            outlet_R_PCA
+            outlet_L_PCA
+            outlet_L_MCA
+            outlet_R_ACA
+            outlet_L_ACA
+        );
+    }
+
+    // ── Residual monitoring ───────────────────────────────────────────────
+    residuals
+    {
+        type            solverInfo;
+        libs            (utilityFunctionObjects);
+        fields          (U p);
+    }
+}
+
+// ************************************************************************* //
