@@ -3,11 +3,11 @@
 
 # Large geometry files
 *.stl
-#*.vtp
-#*.vtu
+*.vtp
+*.vtu
 
 # OpenFOAM results
 processor*/
 postProcessing/
-#*.foam
-#openfoam/
+*.foam
+openfoam/

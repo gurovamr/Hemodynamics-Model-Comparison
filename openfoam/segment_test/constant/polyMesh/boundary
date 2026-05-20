@@ -14,50 +14,43 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-7
+6
 (
     xmin
     {
         type            patch;
         nFaces          3600;
-        startFace       811039;
+        startFace       637200;
     }
     xmax
     {
         type            patch;
         nFaces          3600;
-        startFace       814639;
+        startFace       640800;
     }
     ymin
     {
         type            patch;
         nFaces          3600;
-        startFace       818239;
+        startFace       644400;
     }
     ymax
     {
         type            patch;
         nFaces          3600;
-        startFace       821839;
+        startFace       648000;
     }
     zmin
     {
         type            patch;
         nFaces          3600;
-        startFace       825439;
+        startFace       651600;
     }
     zmax
     {
         type            patch;
         nFaces          3600;
-        startFace       829039;
-    }
-    artery
-    {
-        type            wall;
-        inGroups        List<word> 1(wall);
-        nFaces          15458;
-        startFace       832639;
+        startFace       655200;
     }
 )
 
