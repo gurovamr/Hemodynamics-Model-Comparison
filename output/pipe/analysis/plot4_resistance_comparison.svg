@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="540" viewBox="0 0 820 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="410.0" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Hydraulic resistance comparison</text>
+<line x1="90" y1="440.00" x2="784" y2="440.00" stroke="#e7e7e7"/>
+<text x="78" y="444.00" text-anchor="end" font-family="Arial" font-size="12">0</text>
+<line x1="90" y1="363.60" x2="784" y2="363.60" stroke="#e7e7e7"/>
+<text x="78" y="367.60" text-anchor="end" font-family="Arial" font-size="12">5.33e+06</text>
+<line x1="90" y1="287.20" x2="784" y2="287.20" stroke="#e7e7e7"/>
+<text x="78" y="291.20" text-anchor="end" font-family="Arial" font-size="12">1.07e+07</text>
+<line x1="90" y1="210.80" x2="784" y2="210.80" stroke="#e7e7e7"/>
+<text x="78" y="214.80" text-anchor="end" font-family="Arial" font-size="12">1.6e+07</text>
+<line x1="90" y1="134.40" x2="784" y2="134.40" stroke="#e7e7e7"/>
+<text x="78" y="138.40" text-anchor="end" font-family="Arial" font-size="12">2.13e+07</text>
+<line x1="90" y1="58.00" x2="784" y2="58.00" stroke="#e7e7e7"/>
+<text x="78" y="62.00" text-anchor="end" font-family="Arial" font-size="12">2.67e+07</text>
+<line x1="90" y1="440" x2="784" y2="440" stroke="#222"/>
+<line x1="90" y1="58" x2="90" y2="440" stroke="#222"/>
+<rect x="166.34" y="116.27" width="194.32" height="323.73" fill="#0B6E69"/>
+<text x="263.50" y="108.27" text-anchor="middle" font-family="Arial" font-size="12">2.26e+07</text>
+<text x="263.50" y="464" text-anchor="middle" font-family="Arial" font-size="13">CFD</text>
+<rect x="513.34" y="120.79" width="194.32" height="319.21" fill="#B23A48"/>
+<text x="610.50" y="112.79" text-anchor="middle" font-family="Arial" font-size="12">2.23e+07</text>
+<text x="610.50" y="464" text-anchor="middle" font-family="Arial" font-size="13">Poiseuille</text>
+<text x="24" y="270.0" transform="rotate(-90 24 270.0)" text-anchor="middle" font-family="Arial" font-size="15">resistance (Pa s / m3)</text>
+</svg>

@@ -1,0 +1,13 @@
+Quantity,Value,Units
+pipe_radius,0.002,m
+pipe_length,0.04,m
+rho_used_for_pressure_conversion,1060.0,kg/m3
+mu_used_for_poiseuille,0.0035,Pa s
+pressure_gradient_centreline,-711.9553099732321,Pa/m
+deltaP_CFD_patch,28.497418738,Pa
+Q_CFD_outlet,1.2611080942151275e-06,m3/s
+R_CFD,22597126.18507604,Pa s/m3
+R_Poiseuille,22281692.032865357,Pa s/m3
+mass_conservation_percent_difference,7.938064901959428e-06,%
+wall_shear_stress_component_min_vector_magnitude,0.0007024969446258166,kinematic units
+wall_shear_stress_component_max_vector_magnitude,0.0006407742616537701,kinematic units

@@ -1,0 +1,8 @@
+Quantity,CFD,1D,0D,Used Later?,Geometry Alone?,Needs BCs?,Validation Use
+Pressure,field or patch average,nodal/segment pressure,node pressure,Yes,No,Yes,absolute/relative pressure checks
+Pressure drop,inlet-outlet patch pressure,segment pressure loss,R*Q relation,Yes,No,Yes,primary segment comparison
+Flow rate,patch Umean*Area,primary state variable,branch flow,Yes,No,Yes,primary network comparison
+Resistance,DeltaP/Q,geometry/friction closure,network element,Yes,Estimate only,CFD yes,main CFD to 0D/1D bridge
+Mean velocity,patch area average,Q/A,derived from Q/A,Yes,No,Yes,secondary flow diagnostic
+Peak velocity,sample/profile maximum,profile assumption,usually not explicit,Sometimes,No,Yes,profile-shape diagnostic
+Wall shear stress,wallShearStress field,model-dependent estimate,not resolved,Yes for CFD diagnostics,No,Yes,CFD-only or approximate 1D comparison

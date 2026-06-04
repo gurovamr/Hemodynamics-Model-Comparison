@@ -1,0 +1,5 @@
+metric,value,units
+centreline_pressure_gradient_dPdx,-711.9553099732321,Pa/m
+centreline_linear_fit_R2,0.9999911564016399,-
+centreline_deltaP,27.234823577399997,Pa
+patch_deltaP,28.497418738,Pa

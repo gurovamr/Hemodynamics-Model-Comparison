@@ -1,0 +1,6 @@
+metric,value,units
+Umean_profile_m_per_s,0.0994598274260237,m/s
+Umax_profile_m_per_s,0.19995405,m/s
+profile_RMSE_m_per_s,0.0005438611354079637,m/s
+profile_max_deviation_m_per_s,0.0010546910005057586,m/s
+profile_RMSE_percent_of_Umax,0.2719930581090824,%
