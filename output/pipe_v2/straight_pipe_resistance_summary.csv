@@ -1,0 +1,5 @@
+quantity,value,units
+R_CFD,22597126.18507604,Pa s / m^3
+R_Poiseuille,22281692.083794925,Pa s / m^3
+percentage difference,1.4156649328734037,%
+Q implied by Poiseuille at CFD DeltaP,1.2789611592705592e-06,m^3/s

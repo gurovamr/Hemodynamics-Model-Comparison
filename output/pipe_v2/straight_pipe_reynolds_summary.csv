@@ -1,0 +1,8 @@
+quantity,value,units
+rho,1060.0,kg/m^3
+mu,0.003500000008,Pa s
+nu,3.3018868e-06,m^2/s
+characteristic velocity U,0.10078023299999998,m/s
+diameter D,0.004,m
+Re = rho U D / mu,122.08805341237014,-
+Re = U D / nu,122.08805341237014,-

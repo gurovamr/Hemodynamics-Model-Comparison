@@ -1,0 +1,7 @@
+quantity,value,units
+mean velocity from Q/A,0.10078023299999998,m/s
+max sampled axial velocity,0.19995405,m/s
+profile-based mean estimate Umax/2,0.099977025,m/s
+Umax / Umean,1.9840602075210525,-
+profile RMSE vs parabolic,0.0015324159838430202,m/s
+profile RMSE / Umax,0.7663840686612851,%

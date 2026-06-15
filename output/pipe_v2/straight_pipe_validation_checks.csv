@@ -1,0 +1,6 @@
+check,value,units,baseline_interpretation
+Flow conservation spread,0.749612268744363,%,Low spread indicates near-conserved incompressible flow.
+Pressure linearity R2,0.9999911564016399,-,Near 1.0 indicates linear pressure decay.
+Velocity profile RMSE / Umax,0.7663840686612851,%,Low value indicates parabolic profile agreement.
+Reynolds number,122.08805341237014,-,Well below transition indicates laminar flow.
+Resistance difference,1.4156649328734037,%,Small difference indicates agreement with Poiseuille theory.
