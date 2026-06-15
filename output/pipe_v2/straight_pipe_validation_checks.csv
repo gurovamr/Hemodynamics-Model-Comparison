@@ -4,3 +4,5 @@ Pressure linearity R2,0.9999911564016399,-,Near 1.0 indicates linear pressure de
 Velocity profile RMSE / Umax,0.7663840686612851,%,Low value indicates parabolic profile agreement.
 Reynolds number,122.08805341237014,-,Well below transition indicates laminar flow.
 Resistance difference,1.4156649328734037,%,Small difference indicates agreement with Poiseuille theory.
+Wall shear stress difference,99.90439222315362,%,Small difference indicates viscous wall-stress agreement with laminar theory.
+Estimated entrance length,0.02441761068247403,m,Shorter than interior slice locations supports developed-flow assumptions.

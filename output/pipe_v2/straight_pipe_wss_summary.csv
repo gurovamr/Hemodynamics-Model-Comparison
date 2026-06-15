@@ -1,0 +1,6 @@
+quantity,value,units,source_or_note
+tau_w_theory_from_Q,0.7024905559920729,Pa,Analytical laminar expression using Q
+tau_w_theory_from_DeltaP,0.71243546845,Pa,Analytical consistency expression using DeltaP
+tau_w_CFD,0.0006716356031397934,Pa,OpenFOAM wallShearStress min/max magnitudes (mean)
+absolute_difference_vs_theoryQ,0.7018189203889331,Pa,abs(tau_w_CFD - tau_w_theory_from_Q)
+percent_difference_vs_theoryQ,99.90439222315362,%,100 * abs diff / |tau_w_theory_from_Q|

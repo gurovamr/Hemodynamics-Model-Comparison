@@ -1,0 +1,4 @@
+slice,axial_z_m,axial_z_over_D,distance_from_outlet_m,note,downstream_of_entrance
+inlet,0.0,0.0,0.04,Near inlet BC; prefer downstream offset for developed-profile checks.,False
+mid-vessel,0.019904523,4.97613075,0.020095477,Representative interior section for profile/conservation checks.,False
+outlet,0.04,10.0,0.0,Near outlet BC; avoid using too close to the patch for sensitive gradients.,True
