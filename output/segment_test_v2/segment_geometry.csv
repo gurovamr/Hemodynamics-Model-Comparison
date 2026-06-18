@@ -1,0 +1,6 @@
+quantity,value,units
+main path arc length,35.893,mm
+total tree arc length,36.77,mm
+inlet-outlet straight distance,25.226,mm
+tortuosity  T = arc / straight,1.4228,-
+number of terminal nodes,3.0,-

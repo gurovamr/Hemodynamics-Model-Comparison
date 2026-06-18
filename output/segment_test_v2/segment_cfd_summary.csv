@@ -1,0 +1,24 @@
+quantity,value,units
+centerline arc length (main path),35.892703488469124,mm
+inlet-outlet straight distance,25.22645378112793,mm
+tortuosity T,1.4228200205976111,-
+mean radius (ce_radius),1.102720263458472,mm
+min  radius (ce_radius),0.7118926835610768,mm
+max  radius (ce_radius),1.8301069462524944,mm
+pressure drop DeltaP,356.3659588409438,Pa
+flow rate Q (outlet),1.033396035006115,mL/s
+mean velocity U (outlet),0.1818260961330109,m/s
+Reynolds number Re,121.51716401904196,-
+Dean number De (estimate),23.363342220442625,-
+CFD hydraulic resistance R_CFD,344849357.6219644,Pa s/m^3
+"Poiseuille resistance R_Pois (mean r, arc L)",216224384.6867392,Pa s/m^3
+R_CFD / R_Poiseuille,1.5948680262014574,-
+effective WSS tau_w (Q-based),3.432421780135153,Pa
+effective WSS tau_w (dP-based),5.474259749575043,Pa
+Dean correction factor f_Dean,1.1157544079188588,-
+Dean-corrected resistance R_Dean,241253310.31377226,Pa s/m^3
+R_CFD / R_Dean,1.4294077754765557,-
+CL probe valid points,65.0,points
+CL probe valid fraction,0.5241935483870968,-
+CL pressure linear fit R²,0.9374800094933812,-
+CL pressure RMSE from linear decay,34.23368102928214,Pa

@@ -1,0 +1,8 @@
+quantity,value,units
+P_inlet,446.31300439659657,Pa
+P_midslice,322.1482300414759,Pa
+P_outlet,89.94704555565276,Pa
+DeltaP = P_inlet - P_outlet,356.3659588409438,Pa
+DeltaP [mmHg],2.6729718939180613,mmHg
+arc length L_arc,0.035892703488469124,m
+average pressure gradient dP/ds,9928.646332127915,Pa/m

@@ -1,6 +1,7 @@
 quantity,value,units,source_or_note
 tau_w_theory_from_Q,0.7024905559920729,Pa,Analytical laminar expression using Q
 tau_w_theory_from_DeltaP,0.71243546845,Pa,Analytical consistency expression using DeltaP
-tau_w_CFD,0.0006716356031397934,Pa,OpenFOAM wallShearStress min/max magnitudes (mean)
-absolute_difference_vs_theoryQ,0.7018189203889331,Pa,abs(tau_w_CFD - tau_w_theory_from_Q)
-percent_difference_vs_theoryQ,99.90439222315362,%,100 * abs diff / |tau_w_theory_from_Q|
+tau_w_CFD_kinematic_raw,0.0006716356031397934,m^2/s^2,OpenFOAM wallShearStress min/max magnitudes (mean)
+tau_w_CFD_physical,0.7119337393281809,Pa,OpenFOAM incompressible wallShearStress is kinematic and was converted using rho. Raw source: OpenFOAM wallShearStress min/max magnitudes (mean)
+absolute_difference_vs_theoryQ,0.009443183336108052,Pa,abs(tau_w_CFD_physical - tau_w_theory_from_Q)
+percent_difference_vs_theoryQ,1.3442434571625204,%,100 * abs diff / |tau_w_theory_from_Q|

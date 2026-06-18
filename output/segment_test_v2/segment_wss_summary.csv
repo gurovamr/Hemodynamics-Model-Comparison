@@ -1,0 +1,6 @@
+quantity,value,units
+tau_w from Q (Hagen-Poiseuille),3.432421780135153,Pa
+tau_w from DeltaP (effective),5.474259749575043,Pa
+tau_w straight-pipe reference,0.7119337393281809,Pa
+Dean number estimate,23.363342220442625,-
+Estimated radius of curvature,29.83119596072227,mm
