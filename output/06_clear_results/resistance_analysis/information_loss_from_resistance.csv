@@ -1,0 +1,4 @@
+Quantity,Value
+R_CFD / R_Poiseuille(mean),1.392902584669273
+Difference [%],39.29025846692731
+Information-loss interpretation,"R_CFD is greater than the mean-radius Poiseuille estimate, indicating additional 3D losses not represented by ideal straight-tube theory. Likely contributors include curvature, tortuosity, skewed velocity profiles, local acceleration, entrance effects, and secondary flow structures."

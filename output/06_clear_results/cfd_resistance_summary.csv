@@ -1,0 +1,2 @@
+Quantity,Q_inlet [mL/s],Delta P inlet-outlet [mmHg],R_CFD [Pa·s/m³],R_CFD [mmHg·s/mL]
+CFD-equivalent hydraulic resistance,1.0213744738922028,2.672971893918061,348908229.0092116,2.6170341654731524

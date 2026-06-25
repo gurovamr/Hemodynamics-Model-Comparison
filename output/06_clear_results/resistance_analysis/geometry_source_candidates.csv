@@ -1,0 +1,9 @@
+source_file,score,length_source,radius_source,n_radius_values
+output/reduced_order_models/firstblood_segment_parameters.csv,23,sum(segment_length_m),radius_mean_m,123
+output/reduced_order_models/segment_0D_native_segments.csv,21,sum(length_m),radius_m,123
+output/reduced_order_models/segment_1D_geometry_profile.csv,19,max(s_m) - min(s_m),r_m,123
+output/reduced_order_models/firstblood_input_template.csv,11,sum(length_m),diameter_m,123
+output/reduced_order_models/segment_0D_50_segments.csv,11,sum(length_m),radius_m,50
+output/reduced_order_models/segment_0D_20_segments.csv,9,sum(length_m),radius_m,20
+output/reduced_order_models/segment_0D_10_segments.csv,9,sum(length_m),radius_m,10
+output/reduced_order_models/segment_0D_5_segments.csv,9,sum(length_m),radius_m,5

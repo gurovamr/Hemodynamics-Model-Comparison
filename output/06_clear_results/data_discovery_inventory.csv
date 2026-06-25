@@ -1,0 +1,100 @@
+file,location,purpose,detected quantities,path
+U,openfoam/segment_test_V2/0,candidate CFD/ROM post-processing artifact,flow rate,openfoam/segment_test_V2/0/U
+p,openfoam/segment_test_V2/0,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; velocity,openfoam/segment_test_V2/0/p
+boundary,openfoam/segment_test_V2/constant/polyMesh,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/segment_test_V2/constant/polyMesh/boundary
+inletFaces,openfoam/segment_test_V2/constant/polyMesh/sets,inlet data,candidate post-processing data,openfoam/segment_test_V2/constant/polyMesh/sets/inletFaces
+outletFaces,openfoam/segment_test_V2/constant/polyMesh/sets,outlet data,candidate post-processing data,openfoam/segment_test_V2/constant/polyMesh/sets/outletFaces
+inlet_integration.csv,openfoam/segment_test_V2/data,raw velocity samples for inlet,velocity components U; pressure/kinematic pressure; cell type,openfoam/segment_test_V2/data/inlet_integration.csv
+inlet_integration_variable.csv,openfoam/segment_test_V2/data,ParaView Integrate Variables export for inlet,velocity components U; area; pressure/kinematic pressure; cell type,openfoam/segment_test_V2/data/inlet_integration_variable.csv
+midslice_integration.csv,openfoam/segment_test_V2/data,raw velocity samples for midslice,velocity components U; pressure/kinematic pressure; cell type,openfoam/segment_test_V2/data/midslice_integration.csv
+midslice_integration_variable.csv,openfoam/segment_test_V2/data,ParaView Integrate Variables export for midslice,velocity components U; area; pressure/kinematic pressure; cell type,openfoam/segment_test_V2/data/midslice_integration_variable.csv
+outlet_integration.csv,openfoam/segment_test_V2/data,raw velocity samples for outlet,velocity components U; pressure/kinematic pressure; cell type,openfoam/segment_test_V2/data/outlet_integration.csv
+outlet_integration_variable.csv,openfoam/segment_test_V2/data,ParaView Integrate Variables export for outlet,velocity components U; area; pressure/kinematic pressure; cell type,openfoam/segment_test_V2/data/outlet_integration_variable.csv
+createPatchDict,openfoam/segment_test_V2/system,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/segment_test_V2/system/createPatchDict
+fvSolution,openfoam/segment_test_V2/system,candidate CFD/ROM post-processing artifact,area; flow rate,openfoam/segment_test_V2/system/fvSolution
+topoSetDict,openfoam/segment_test_V2/system,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/segment_test_V2/system/topoSetDict
+CoW_3D_PostProcessing_and_1D_Calibration.ipynb,.,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; slice normal,CoW_3D_PostProcessing_and_1D_Calibration.ipynb
+inlet_integration.csv,data_parafoam,raw velocity samples for inlet,velocity components U; pressure/kinematic pressure; cell type,data_parafoam/inlet_integration.csv
+inlet_integration_variable.csv,data_parafoam,ParaView Integrate Variables export for inlet,velocity components U; area; pressure/kinematic pressure; cell type,data_parafoam/inlet_integration_variable.csv
+midslice_integration.csv,data_parafoam,raw velocity samples for midslice,velocity components U; pressure/kinematic pressure; cell type,data_parafoam/midslice_integration.csv
+midslice_integration_variable.csv,data_parafoam,ParaView Integrate Variables export for midslice,velocity components U; area; pressure/kinematic pressure; cell type,data_parafoam/midslice_integration_variable.csv
+outlet_integration.csv,data_parafoam,raw velocity samples for outlet,velocity components U; pressure/kinematic pressure; cell type,data_parafoam/outlet_integration.csv
+outlet_integration_variable.csv,data_parafoam,ParaView Integrate Variables export for outlet,velocity components U; area; pressure/kinematic pressure; cell type,data_parafoam/outlet_integration_variable.csv
+U,openfoam/pipe/0,candidate CFD/ROM post-processing artifact,flow rate; velocity,openfoam/pipe/0/U
+p,openfoam/pipe/0,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; velocity,openfoam/pipe/0/p
+wallShearStress,openfoam/pipe/144,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/pipe/144/wallShearStress
+Allrun,openfoam/pipe,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,openfoam/pipe/Allrun
+boundary,openfoam/pipe/constant/polyMesh,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/pipe/constant/polyMesh/boundary
+SHA1Digest,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make/SHA1Digest
+files,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make/files
+files,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make/linux64GccDPInt32Opt,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make/linux64GccDPInt32Opt/files
+options,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/pipe/dynamicCode/parabolicPipeInlet/Make/options
+surfaceFieldValue.dat,"openfoam/pipe/postProcessing/patchAverage(patch=inlet,fields=(U))/144",candidate CFD/ROM post-processing artifact,area,"openfoam/pipe/postProcessing/patchAverage(patch=inlet,fields=(U))/144/surfaceFieldValue.dat"
+surfaceFieldValue.dat,"openfoam/pipe/postProcessing/patchAverage(patch=inlet,fields=(p))/144",candidate CFD/ROM post-processing artifact,area,"openfoam/pipe/postProcessing/patchAverage(patch=inlet,fields=(p))/144/surfaceFieldValue.dat"
+surfaceFieldValue.dat,"openfoam/pipe/postProcessing/patchAverage(patch=outlet,fields=(U))/144",candidate CFD/ROM post-processing artifact,area,"openfoam/pipe/postProcessing/patchAverage(patch=outlet,fields=(U))/144/surfaceFieldValue.dat"
+surfaceFieldValue.dat,"openfoam/pipe/postProcessing/patchAverage(patch=outlet,fields=(p))/144",candidate CFD/ROM post-processing artifact,area,"openfoam/pipe/postProcessing/patchAverage(patch=outlet,fields=(p))/144/surfaceFieldValue.dat"
+outletRadial.xy,openfoam/pipe/postProcessing/sampleDict/144,outlet data,candidate post-processing data,openfoam/pipe/postProcessing/sampleDict/144/outletRadial.xy
+blockMeshDict,openfoam/pipe/system,candidate CFD/ROM post-processing artifact,flow rate; slice normal,openfoam/pipe/system/blockMeshDict
+fvSolution,openfoam/pipe/system,candidate CFD/ROM post-processing artifact,area; flow rate,openfoam/pipe/system/fvSolution
+sampleDict,openfoam/pipe/system,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; velocity,openfoam/pipe/system/sampleDict
+cfd_resistance_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,flow rate,output/06_clear_results/cfd_resistance_summary.csv
+data_discovery_inventory.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; slice normal; cell type; velocity,output/06_clear_results/data_discovery_inventory.csv
+flow_rate_conclusions.csv,output/06_clear_results,flow-rate summary or calculation,flow rate; velocity,output/06_clear_results/flow_rate_conclusions.csv
+flow_rate_summary.csv,output/06_clear_results,flow-rate summary or calculation,area; flow rate; slice normal,output/06_clear_results/flow_rate_summary.csv
+flow_transferability_summary.csv,output/06_clear_results,flow-rate summary or calculation,flow rate; velocity,output/06_clear_results/flow_transferability_summary.csv
+mass_conservation_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,flow rate,output/06_clear_results/mass_conservation_summary.csv
+pressure_drop_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/06_clear_results/pressure_drop_summary.csv
+pressure_resistance_conclusions.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/06_clear_results/pressure_resistance_conclusions.csv
+pressure_slice_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure,output/06_clear_results/pressure_slice_summary.csv
+cfd_resistance_loaded.csv,output/06_clear_results/resistance_analysis,candidate CFD/ROM post-processing artifact,flow rate,output/06_clear_results/resistance_analysis/cfd_resistance_loaded.csv
+information_loss_from_resistance.csv,output/06_clear_results/resistance_analysis,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/06_clear_results/resistance_analysis/information_loss_from_resistance.csv
+velocity_distribution_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_distribution_summary.csv
+velocity_profile_nonuniformity_conclusion.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/06_clear_results/velocity_profile_nonuniformity_conclusion.csv
+velocity_profile_nonuniformity_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_profile_nonuniformity_summary.csv
+analysis_scalar_summary.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/pipe/analysis/analysis_scalar_summary.csv
+discovered_files.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,output/pipe/analysis/discovered_files.csv
+flow_rate_summary.csv,output/pipe/analysis,flow-rate summary or calculation,area; flow rate,output/pipe/analysis/flow_rate_summary.csv
+future_cow_quantity_map.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,output/pipe/analysis/future_cow_quantity_map.csv
+outlet_radial_loaded.csv,output/pipe/analysis,outlet data,pressure/kinematic pressure,output/pipe/analysis/outlet_radial_loaded.csv
+outlet_radial_velocity_profile.csv,output/pipe/analysis,outlet data,candidate post-processing data,output/pipe/analysis/outlet_radial_velocity_profile.csv
+velocity_profile_comparison.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/pipe/analysis/velocity_profile_comparison.csv
+velocity_summary.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/pipe/analysis/velocity_summary.csv
+straight_pipe_flow_summary.csv,output/pipe_v2,flow-rate summary or calculation,area; flow rate,output/pipe_v2/straight_pipe_flow_summary.csv
+straight_pipe_pressure_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,flow rate,output/pipe_v2/straight_pipe_pressure_summary.csv
+straight_pipe_reynolds_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/pipe_v2/straight_pipe_reynolds_summary.csv
+straight_pipe_slice_position_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/pipe_v2/straight_pipe_slice_position_summary.csv
+straight_pipe_validation_checks.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/pipe_v2/straight_pipe_validation_checks.csv
+straight_pipe_velocity_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/pipe_v2/straight_pipe_velocity_summary.csv
+firstblood_input_template.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/firstblood_input_template.csv
+firstblood_segment_parameters.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/firstblood_segment_parameters.csv
+segment_0D_10_segments.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/segment_0D_10_segments.csv
+segment_0D_20_segments.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/segment_0D_20_segments.csv
+segment_0D_50_segments.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/segment_0D_50_segments.csv
+segment_0D_5_segments.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/segment_0D_5_segments.csv
+segment_0D_native_segments.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/segment_0D_native_segments.csv
+segment_1D_geometry_profile.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/segment_1D_geometry_profile.csv
+analysis_scalar_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/segment_test_v2/analysis_scalar_summary.csv
+cfd_resistance_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,flow rate,output/segment_test_v2/cfd_resistance_summary.csv
+data_audit_files.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/segment_test_v2/data_audit_files.csv
+flow_rate_summary.csv,output/segment_test_v2,flow-rate summary or calculation,flow rate; slice normal,output/segment_test_v2/flow_rate_summary.csv
+future_calibration_recommendations.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/segment_test_v2/future_calibration_recommendations.csv
+information_loss_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/segment_test_v2/information_loss_summary.csv
+pressure_drop_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/segment_test_v2/pressure_drop_summary.csv
+reduced_order_comparison.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/segment_test_v2/reduced_order_comparison.csv
+slice_integrated_quantities.csv,output/segment_test_v2,integrated slice quantities,area; flow rate,output/segment_test_v2/slice_integrated_quantities.csv
+velocity_slice_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; velocity,output/segment_test_v2/velocity_slice_summary.csv
+segment_cfd_summary.csv,output/segment_test_v2_V1,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/segment_test_v2_V1/segment_cfd_summary.csv
+segment_flow_summary.csv,output/segment_test_v2_V1,flow-rate summary or calculation,area; flow rate,output/segment_test_v2_V1/segment_flow_summary.csv
+segment_geometry.csv,output/segment_test_v2_V1,candidate CFD/ROM post-processing artifact,flow rate,output/segment_test_v2_V1/segment_geometry.csv
+segment_pressure_summary.csv,output/segment_test_v2_V1,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/segment_test_v2_V1/segment_pressure_summary.csv
+segment_resistance_budget.csv,output/segment_test_v2_V1,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/segment_test_v2_V1/segment_resistance_budget.csv
+segment_velocity_profile.csv,output/segment_test_v2_V1,candidate CFD/ROM post-processing artifact,flow rate,output/segment_test_v2_V1/segment_velocity_profile.csv
+segment_velocity_summary.csv,output/segment_test_v2_V1,candidate CFD/ROM post-processing artifact,flow rate,output/segment_test_v2_V1/segment_velocity_summary.csv
+01_straight_pipe_validation.ipynb,scripts,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,scripts/01_straight_pipe_validation.ipynb
+03_reduced_order_models_0D_1D.ipynb,scripts,candidate CFD/ROM post-processing artifact,candidate post-processing data,scripts/03_reduced_order_models_0D_1D.ipynb
+06_clear_results_CFD_to_ROM_metrics.ipynb,scripts,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; slice normal; velocity,scripts/06_clear_results_CFD_to_ROM_metrics.ipynb
+hemodynamics_analysis.ipynb,scripts,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; cell type; velocity,scripts/hemodynamics_analysis.ipynb
+model_comparison_0D1D_3D.ipynb,scripts,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate,scripts/model_comparison_0D1D_3D.ipynb
+data_discovery_inventory.csv,scripts/output/06_clear_results,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; slice normal; cell type; velocity,scripts/output/06_clear_results/data_discovery_inventory.csv
+pipe_analysis.ipynb,scripts,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,scripts/pipe_analysis.ipynb
+pipe_analysis_with_outputs.ipynb,scripts,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate,scripts/pipe_analysis_with_outputs.ipynb

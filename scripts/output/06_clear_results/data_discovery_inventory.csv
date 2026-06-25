@@ -1,0 +1,9 @@
+file,location,purpose,detected quantities,path
+01_straight_pipe_validation.ipynb,.,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,01_straight_pipe_validation.ipynb
+03_reduced_order_models_0D_1D.ipynb,.,candidate CFD/ROM post-processing artifact,candidate post-processing data,03_reduced_order_models_0D_1D.ipynb
+06_clear_results_CFD_to_ROM_metrics.ipynb,.,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; slice normal; velocity,06_clear_results_CFD_to_ROM_metrics.ipynb
+hemodynamics_analysis.ipynb,.,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; cell type; velocity,hemodynamics_analysis.ipynb
+model_comparison_0D1D_3D.ipynb,.,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate,model_comparison_0D1D_3D.ipynb
+data_discovery_inventory.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; slice normal; cell type; velocity,output/06_clear_results/data_discovery_inventory.csv
+pipe_analysis.ipynb,.,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,pipe_analysis.ipynb
+pipe_analysis_with_outputs.ipynb,.,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate,pipe_analysis_with_outputs.ipynb

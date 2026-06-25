@@ -1,0 +1,4 @@
+Slice,n samples,mean velocity [m/s],maximum velocity [m/s],standard deviation [m/s],source_file
+inlet,1545,0.13232932056250293,0.41998226930232235,0.09901659382713408,openfoam/segment_test_V2/data/inlet_integration.csv
+midslice,994,0.21880776403146807,0.6110642084139714,0.16008651087683126,openfoam/segment_test_V2/data/midslice_integration.csv
+outlet,1447,0.12685896690218704,0.7779798584097894,0.18806048210372792,openfoam/segment_test_V2/data/outlet_integration.csv

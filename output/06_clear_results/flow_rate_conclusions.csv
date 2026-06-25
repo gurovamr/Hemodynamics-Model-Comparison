@@ -1,0 +1,4 @@
+Question,Conclusion
+Is flow conserved?,"Yes, within 0.593% across inlet, midslice, and outlet for this extracted CFD dataset."
+Which quantity is transferable to ROMs?,Flow rate Q is the primary conserved quantity; 1D models also use average velocity Q/A.
+Which information is lost?,Local velocity distributions and velocity profiles are collapsed in 1D and absent in 0D.

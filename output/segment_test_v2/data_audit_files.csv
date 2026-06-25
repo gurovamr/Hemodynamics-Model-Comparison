@@ -1,0 +1,9 @@
+input,path,exists
+inlet_integration_variable.csv,openfoam/segment_test_V2/data/inlet_integration_variable.csv,True
+inlet_integration.csv,openfoam/segment_test_V2/data/inlet_integration.csv,True
+midslice_integration_variable.csv,openfoam/segment_test_V2/data/midslice_integration_variable.csv,True
+midslice_integration.csv,openfoam/segment_test_V2/data/midslice_integration.csv,True
+outlet_integration_variable.csv,openfoam/segment_test_V2/data/outlet_integration_variable.csv,True
+outlet_integration.csv,openfoam/segment_test_V2/data/outlet_integration.csv,True
+centerline,data/mr_limited/geometry/segment_test_centerline_candidate.vtu,True
+network_resistance_table.csv,openfoam/segment_test_V2/data/network_resistance_table.csv,True

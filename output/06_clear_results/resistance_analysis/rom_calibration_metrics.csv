@@ -1,0 +1,4 @@
+Metric,Definition,Value,Use
+CorrectionFactor,R_CFD / R_Poiseuille,1.392902584669273,Multiplier that maps the ideal mean-radius Poiseuille estimate to the CFD-equivalent resistance.
+ResistanceError,|R_model − R_CFD| / R_CFD × 100,computed later for each ROM,Primary error metric for future 0D/1D calibration against CFD resistance.
+Primary calibration target,R_model → R_CFD,348908229.0092116,Future reduced-order models should reproduce this CFD-equivalent resistance.

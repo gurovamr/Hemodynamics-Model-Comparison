@@ -1,0 +1,4 @@
+Slice,Transferable Q [mL/s],Transferable average velocity Q/A [m/s],0D transfer,1D transfer,Not transferred
+inlet,1.0213744738922028,0.20482959996298833,lumped Q,Q and Q/A,velocity profile
+midslice,1.027429854844189,0.3319525731564342,lumped Q,Q and Q/A,velocity profile
+outlet,1.026498933012232,0.18061255061154824,lumped Q,Q and Q/A,velocity profile

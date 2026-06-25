@@ -1,0 +1,6 @@
+Quantity,Value,Units
+Q_inlet,1.0213744738922028,mL/s
+DeltaP_inlet_outlet,2.672971893918061,mmHg
+DeltaP_inlet_outlet,356.36595884094373,Pa
+R_CFD,348908229.0092116,Pa·s/m³
+R_CFD,2.6170341654731524,mmHg·s/mL

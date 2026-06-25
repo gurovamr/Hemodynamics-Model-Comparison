@@ -1,0 +1,4 @@
+representation,preserves,information_lost_or_simplified
+3D CFD,velocity profile; pressure field; spatial flow structure; curvature effects,No transient or wall-motion quantities in this steady rigid-wall run
+1D model,length; radius; pressure drop; flow rate; network connectivity,cross-sectional velocity profile; secondary flow; WSS distribution; local pressure patterns; recirculation structures
+0D model,global resistance; global flow; global pressure,spatial pressure field; velocity distribution; curvature-induced structure; local hemodynamic extrema

@@ -1,0 +1,9 @@
+Quantity,Value,Units,Source
+Length,0.03589270492000001,m,output/reduced_order_models/firstblood_segment_parameters.csv
+Length,35.892704920000014,mm,output/reduced_order_models/firstblood_segment_parameters.csv
+Mean Radius,0.001099142387793225,m,output/reduced_order_models/firstblood_segment_parameters.csv
+Mean Radius,1.0991423877932252,mm,output/reduced_order_models/firstblood_segment_parameters.csv
+Minimum Radius,0.000711892683561,m,output/reduced_order_models/firstblood_segment_parameters.csv
+Minimum Radius,0.711892683561,mm,output/reduced_order_models/firstblood_segment_parameters.csv
+Maximum Radius,0.0018301069462524,m,output/reduced_order_models/firstblood_segment_parameters.csv
+Maximum Radius,1.8301069462524,mm,output/reduced_order_models/firstblood_segment_parameters.csv

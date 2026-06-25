@@ -1,0 +1,5 @@
+Question,Conclusion
+What is compared in Section 3?,Only CFD resistance and analytical Poiseuille resistance are compared.
+What is the correction factor?,R_CFD / R_Poiseuille(mean radius) = 1.3929.
+What does the difference mean?,It quantifies resistance information lost when a 3D vessel is reduced to an idealized hydraulic representation.
+What is the calibration target?,Future 0D/1D models should reproduce R_CFD rather than the ideal Poiseuille resistance.

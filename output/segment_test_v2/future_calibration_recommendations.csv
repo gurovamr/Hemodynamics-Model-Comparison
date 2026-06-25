@@ -1,0 +1,6 @@
+parameter,recommendation
+resistance,Fit total 0D/1D resistance to R_CFD after validating pressure drop and flow conservation.
+vessel radius,Prioritize radius profile checks because Poiseuille resistance scales with r^-4.
+vessel length,Use centerline arc length for 1D/0D segment lengths.
+discretization density,Refine where radius or curvature varies rapidly; do not tune it to mimic absent transient effects.
+outlet boundary resistance,Adjust outlet resistance only after internal segment resistance matches CFD pressure drop.

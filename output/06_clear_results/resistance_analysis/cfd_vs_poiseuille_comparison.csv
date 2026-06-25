@@ -1,0 +1,5 @@
+Quantity,Value
+R_CFD [Pa·s/m³],348908229.0092116
+R_Poiseuille(mean radius) [Pa·s/m³],250490043.4886158
+Difference [%],39.29025846692731
+Correction Factor [-],1.392902584669273

@@ -1,0 +1,6 @@
+Question,Conclusion
+Does pressure decrease along the vessel?,"Yes, pressure decreases monotonically from inlet to outlet."
+What is the total pressure drop?,The inlet-to-outlet pressure drop is 2.67297 mmHg (356.366 Pa).
+What is the CFD-equivalent resistance?,R_CFD = 3.48908e+08 Pa·s/m³ = 2.61703 mmHg·s/mL.
+Why is this important for 0D/1D?,It gives the global pressure-flow response that reduced-order models can match through a lumped or distributed resistance.
+What information is still lost?,"Matching resistance does not recover local 3D pressure fields, velocity fields, or spatial flow structures."

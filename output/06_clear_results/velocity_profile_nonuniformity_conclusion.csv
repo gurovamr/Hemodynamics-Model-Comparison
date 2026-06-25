@@ -1,0 +1,6 @@
+Result
+✓ Flow rate is conserved.
+✓ Flow rate can be transferred to 1D and 0D models.
+✓ Velocity distributions are non-uniform.
+✓ Velocity profile information is lost during model reduction.
+✓ Agreement in flow rate alone is insufficient to claim agreement between CFD and reduced-order models.
