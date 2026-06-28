@@ -1,0 +1,4 @@
+Representation,Velocity information retained,Information lost
+CFD,measured spatial velocity field and local non-uniformity,none within available point-export data
+1D,flow rate and average velocity; idealized parabolic profile,"measured cross-sectional velocity pattern, skewness, and secondary-flow structure"
+0D,lumped average flow state,all local profile and spatial field information

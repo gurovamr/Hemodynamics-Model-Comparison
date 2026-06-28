@@ -1,7 +1,9 @@
 quantity,value,units
-P_inlet,28.497418738,Pa
-P_outlet,0.0,Pa
-DeltaP patch,28.497418738,Pa
-DeltaP centreline,27.234823577399997,Pa
-centreline dP/dz,-711.9553099732321,Pa/m
-linear fit R2,0.9999911564016399,-
+P_inlet CFD,28.497418738,Pa
+P_outlet CFD,0.0,Pa
+DeltaP CFD patch,28.497418738,Pa
+DeltaP Poiseuille,28.099622239682912,Pa
+DeltaP CFD centreline,27.234823577399997,Pa
+pressure RMSE vs Poiseuille,0.25141194914259163,Pa
+pressure maximum absolute error vs Poiseuille,0.3900327717091596,Pa
+pressure mean absolute error vs Poiseuille,0.23113667754498002,Pa

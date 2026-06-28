@@ -16,10 +16,12 @@ topoSetDict,openfoam/segment_test_V2/system,candidate CFD/ROM post-processing ar
 CoW_3D_PostProcessing_and_1D_Calibration.ipynb,.,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; slice normal,CoW_3D_PostProcessing_and_1D_Calibration.ipynb
 inlet_integration.csv,data_parafoam,raw velocity samples for inlet,velocity components U; pressure/kinematic pressure; cell type,data_parafoam/inlet_integration.csv
 inlet_integration_variable.csv,data_parafoam,ParaView Integrate Variables export for inlet,velocity components U; area; pressure/kinematic pressure; cell type,data_parafoam/inlet_integration_variable.csv
+inlet_point_u.csv,data_parafoam,raw velocity samples for inlet,velocity components U; pressure/kinematic pressure,data_parafoam/inlet_point_u.csv
 midslice_integration.csv,data_parafoam,raw velocity samples for midslice,velocity components U; pressure/kinematic pressure; cell type,data_parafoam/midslice_integration.csv
 midslice_integration_variable.csv,data_parafoam,ParaView Integrate Variables export for midslice,velocity components U; area; pressure/kinematic pressure; cell type,data_parafoam/midslice_integration_variable.csv
 outlet_integration.csv,data_parafoam,raw velocity samples for outlet,velocity components U; pressure/kinematic pressure; cell type,data_parafoam/outlet_integration.csv
 outlet_integration_variable.csv,data_parafoam,ParaView Integrate Variables export for outlet,velocity components U; area; pressure/kinematic pressure; cell type,data_parafoam/outlet_integration_variable.csv
+outlet_point_u.csv,data_parafoam,raw velocity samples for outlet,velocity components U; pressure/kinematic pressure,data_parafoam/outlet_point_u.csv
 U,openfoam/pipe/0,candidate CFD/ROM post-processing artifact,flow rate; velocity,openfoam/pipe/0/U
 p,openfoam/pipe/0,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; velocity,openfoam/pipe/0/p
 wallShearStress,openfoam/pipe/144,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/pipe/144/wallShearStress
@@ -49,6 +51,17 @@ pressure_slice_summary.csv,output/06_clear_results,candidate CFD/ROM post-proces
 cfd_resistance_loaded.csv,output/06_clear_results/resistance_analysis,candidate CFD/ROM post-processing artifact,flow rate,output/06_clear_results/resistance_analysis/cfd_resistance_loaded.csv
 information_loss_from_resistance.csv,output/06_clear_results/resistance_analysis,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/06_clear_results/resistance_analysis/information_loss_from_resistance.csv
 velocity_distribution_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_distribution_summary.csv
+cfd_spatial_slice_summary.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; velocity,output/06_clear_results/velocity_profile_analysis/cfd_spatial_slice_summary.csv
+cfd_spatial_velocity_nonuniformity_summary.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_profile_analysis/cfd_spatial_velocity_nonuniformity_summary.csv
+step4_10_final_conclusions.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_10_final_conclusions.csv
+step4_1_velocity_nonuniformity_summary.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_profile_analysis/step4_1_velocity_nonuniformity_summary.csv
+step4_2_profile_reconstruction_inputs.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/06_clear_results/velocity_profile_analysis/step4_2_profile_reconstruction_inputs.csv
+step4_3_1d_0d_velocity_representations.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,area; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_3_1d_0d_velocity_representations.csv
+step4_5_velocity_information_loss.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_5_velocity_information_loss.csv
+step4_6_pressure_field_states.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure,output/06_clear_results/velocity_profile_analysis/step4_6_pressure_field_states.csv
+step4_7_why_velocity_profiles_matter.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_7_why_velocity_profiles_matter.csv
+step4_8_tortuosity_bifurcation_effects.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_8_tortuosity_bifurcation_effects.csv
+step4_9_information_loss_summary.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_9_information_loss_summary.csv
 velocity_profile_nonuniformity_conclusion.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/06_clear_results/velocity_profile_nonuniformity_conclusion.csv
 velocity_profile_nonuniformity_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_profile_nonuniformity_summary.csv
 analysis_scalar_summary.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/pipe/analysis/analysis_scalar_summary.csv

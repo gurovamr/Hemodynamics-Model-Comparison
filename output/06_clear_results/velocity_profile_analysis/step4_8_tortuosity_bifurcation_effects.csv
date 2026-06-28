@@ -1,0 +1,4 @@
+Geometry feature,CFD effect,0D representation,1D representation
+Curvature/tortuosity,skewed velocity profiles and secondary flow,not represented,partial through empirical losses or correction factors
+Bifurcation,"flow division, impingement, asymmetric profiles",branch flow split only,"branch topology and average waves, limited local detail"
+Aneurysm/expansion,"recirculation, low-velocity residence zones, non-uniform wall shear",not represented,"partial area/pressure behavior, limited recirculation detail"

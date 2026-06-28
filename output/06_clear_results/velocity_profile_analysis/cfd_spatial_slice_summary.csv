@@ -1,0 +1,4 @@
+Slice,Number of Points,Mean Velocity [m/s],Maximum Velocity [m/s],Mean Pressure [Pa],source_file,missing_columns
+inlet,1574,0.15368638710765725,0.4199782298274519,0.42187693138500637,data_parafoam/inlet_point_u.csv,
+midslice,1057,0.25666752200995085,0.6110653447905551,0.3055286565752129,data_parafoam/midsclice_point_u.csv,
+outlet,799,0.11662033783576893,0.763067059569472,0.08431409261576972,data_parafoam/outlet_point_u.csv,

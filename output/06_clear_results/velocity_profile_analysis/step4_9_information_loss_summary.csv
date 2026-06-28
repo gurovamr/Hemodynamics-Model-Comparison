@@ -1,0 +1,10 @@
+Quantity,CFD,1D,0D
+Flow Rate,✓,✓,✓
+Pressure Drop,✓,✓,✓
+Resistance,✓,✓,✓
+Average Velocity,✓,✓,Partial
+Velocity Profile,✓,Partial,✗
+Pressure Field,✓,Partial,✗
+Secondary Flow,✓,✗,✗
+Wall Shear Stress,✓,Partial,✗
+Recirculation,✓,✗,✗

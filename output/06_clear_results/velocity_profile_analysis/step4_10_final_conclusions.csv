@@ -1,0 +1,6 @@
+Conclusion
+Resistance can be transferred to reduced-order models as a global pressure-flow target.
+Velocity-profile information cannot be recovered from 0D and is only idealized in standard 1D.
+Pressure-field information is partially retained by 1D but collapsed into lumped states by 0D.
+"CFD remains necessary when wall shear stress, secondary flow, separation, residence time, or recirculation matter."
+"Future tortuosity and bifurcation studies should quantify velocity-profile distortion and pressure-field changes, then use those quantities to motivate correction factors."

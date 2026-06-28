@@ -1,0 +1,6 @@
+Quantity,CFD,Analytical / Reference,Relative Difference [%]
+Mean velocity [m/s],0.1008,0.1022,1.4
+Pressure drop ΔP [Pa],28.50,28.10,1.42
+Hydraulic resistance [Pa·s/m³],2.260e+07,2.228e+07,1.42
+Wall shear stress [Pa],0.712,0.702,1.34
+Reynolds number [-],122.09,123.82,1.4

@@ -1,0 +1,4 @@
+Slice,n samples,Coordinate columns available,Profile visualization used
+inlet,1545,no,radialized/sorted/cumulative
+midslice,994,no,radialized/sorted/cumulative
+outlet,1447,no,radialized/sorted/cumulative
