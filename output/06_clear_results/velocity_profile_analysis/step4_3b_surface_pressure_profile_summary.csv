@@ -1,0 +1,4 @@
+Quantity,Value,Units,Source
+Centerline length,35.892703603057406,mm,data/mr_limited/geometry/segment_test_centerline_candidate.vtu
+Surface vertices colored,7900,count,data/mr_limited/geometry/segment_test.stl
+Pressure range,0.6747–3.3476,mmHg,output/06_clear_results/pressure_slice_summary.csv

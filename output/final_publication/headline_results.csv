@@ -1,0 +1,8 @@
+quantity,value,unit
+main_path_length_mm,35.893,mm
+tortuosity,1.4228,-
+cfd_pressure_drop_pa,356.36595884094373,Pa
+cfd_pressure_drop_mmhg,2.672964515908866,mmHg
+cfd_flow_rate_ml_s,1.033396035006115,mL/s
+cfd_resistance_pa_s_m3,344849357.62196434,Pa s/m3
+flow_imbalance_pct,0.8142421646964413,%

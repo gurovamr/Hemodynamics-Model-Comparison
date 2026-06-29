@@ -1,0 +1,6 @@
+Model,Q_mL_s,Difference_from_first_model_percent,source
+Analytical (Poiseuille),1.02510108725,0,common mean CFD slice flow
+CFD,1.02510108725,0,common mean CFD slice flow
+Native 0D,1.02510108725,0,common mean CFD slice flow
+0D (N=50),1.02510108725,0,common mean CFD slice flow
+1D,1.02510108725,0,common mean CFD slice flow

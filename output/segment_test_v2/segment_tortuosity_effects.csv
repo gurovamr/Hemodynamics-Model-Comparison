@@ -1,0 +1,5 @@
+model,R [Pa s/m^3],R / R_CFD,error vs CFD [%]
+"R_Poiseuille (straight dist, mean r)",151968893.85624537,0.44068196879995014,-55.931803120004986
+"R_Poiseuille (arc length,    mean r)",216224384.6867392,0.6270111279249408,-37.298887207505906
+R_Poiseuille (arc length)  × f_Dean,241253310.31377226,0.6995904297964283,-30.040957020357176
+R_CFD (3D simulation),344849357.6219644,1.0,0.0

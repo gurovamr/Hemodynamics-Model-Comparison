@@ -14,6 +14,7 @@ createPatchDict,openfoam/segment_test_V2/system,candidate CFD/ROM post-processin
 fvSolution,openfoam/segment_test_V2/system,candidate CFD/ROM post-processing artifact,area; flow rate,openfoam/segment_test_V2/system/fvSolution
 topoSetDict,openfoam/segment_test_V2/system,candidate CFD/ROM post-processing artifact,candidate post-processing data,openfoam/segment_test_V2/system/topoSetDict
 CoW_3D_PostProcessing_and_1D_Calibration.ipynb,.,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; slice normal,CoW_3D_PostProcessing_and_1D_Calibration.ipynb
+Hemodynamics_3D_to_Reduced_Order_Publication.ipynb,.,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,Hemodynamics_3D_to_Reduced_Order_Publication.ipynb
 inlet_integration.csv,data_parafoam,raw velocity samples for inlet,velocity components U; pressure/kinematic pressure; cell type,data_parafoam/inlet_integration.csv
 inlet_integration_variable.csv,data_parafoam,ParaView Integrate Variables export for inlet,velocity components U; area; pressure/kinematic pressure; cell type,data_parafoam/inlet_integration_variable.csv
 inlet_point_u.csv,data_parafoam,raw velocity samples for inlet,velocity components U; pressure/kinematic pressure,data_parafoam/inlet_point_u.csv
@@ -57,6 +58,7 @@ step4_10_final_conclusions.csv,output/06_clear_results/velocity_profile_analysis
 step4_1_velocity_nonuniformity_summary.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_profile_analysis/step4_1_velocity_nonuniformity_summary.csv
 step4_2_profile_reconstruction_inputs.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/06_clear_results/velocity_profile_analysis/step4_2_profile_reconstruction_inputs.csv
 step4_3_1d_0d_velocity_representations.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,area; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_3_1d_0d_velocity_representations.csv
+step4_3b_surface_pressure_profile_summary.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/06_clear_results/velocity_profile_analysis/step4_3b_surface_pressure_profile_summary.csv
 step4_5_velocity_information_loss.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_5_velocity_information_loss.csv
 step4_6_pressure_field_states.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure,output/06_clear_results/velocity_profile_analysis/step4_6_pressure_field_states.csv
 step4_7_why_velocity_profiles_matter.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_7_why_velocity_profiles_matter.csv
@@ -64,6 +66,7 @@ step4_8_tortuosity_bifurcation_effects.csv,output/06_clear_results/velocity_prof
 step4_9_information_loss_summary.csv,output/06_clear_results/velocity_profile_analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/06_clear_results/velocity_profile_analysis/step4_9_information_loss_summary.csv
 velocity_profile_nonuniformity_conclusion.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/06_clear_results/velocity_profile_nonuniformity_conclusion.csv
 velocity_profile_nonuniformity_summary.csv,output/06_clear_results,candidate CFD/ROM post-processing artifact,velocity,output/06_clear_results/velocity_profile_nonuniformity_summary.csv
+headline_results.csv,output/final_publication,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/final_publication/headline_results.csv
 analysis_scalar_summary.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/pipe/analysis/analysis_scalar_summary.csv
 discovered_files.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,area; pressure/kinematic pressure; flow rate; velocity,output/pipe/analysis/discovered_files.csv
 flow_rate_summary.csv,output/pipe/analysis,flow-rate summary or calculation,area; flow rate,output/pipe/analysis/flow_rate_summary.csv
@@ -73,10 +76,11 @@ outlet_radial_velocity_profile.csv,output/pipe/analysis,outlet data,candidate po
 velocity_profile_comparison.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/pipe/analysis/velocity_profile_comparison.csv
 velocity_summary.csv,output/pipe/analysis,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/pipe/analysis/velocity_summary.csv
 straight_pipe_flow_summary.csv,output/pipe_v2,flow-rate summary or calculation,area; flow rate,output/pipe_v2/straight_pipe_flow_summary.csv
-straight_pipe_pressure_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,flow rate,output/pipe_v2/straight_pipe_pressure_summary.csv
+straight_pipe_pressure_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/pipe_v2/straight_pipe_pressure_summary.csv
 straight_pipe_reynolds_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/pipe_v2/straight_pipe_reynolds_summary.csv
 straight_pipe_slice_position_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/pipe_v2/straight_pipe_slice_position_summary.csv
 straight_pipe_validation_checks.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/pipe_v2/straight_pipe_validation_checks.csv
+straight_pipe_validation_summary_report.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/pipe_v2/straight_pipe_validation_summary_report.csv
 straight_pipe_velocity_summary.csv,output/pipe_v2,candidate CFD/ROM post-processing artifact,flow rate; velocity,output/pipe_v2/straight_pipe_velocity_summary.csv
 firstblood_input_template.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/firstblood_input_template.csv
 firstblood_segment_parameters.csv,output/reduced_order_models,candidate CFD/ROM post-processing artifact,area,output/reduced_order_models/firstblood_segment_parameters.csv
@@ -94,6 +98,13 @@ future_calibration_recommendations.csv,output/segment_test_v2,candidate CFD/ROM 
 information_loss_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/segment_test_v2/information_loss_summary.csv
 pressure_drop_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/segment_test_v2/pressure_drop_summary.csv
 reduced_order_comparison.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,candidate post-processing data,output/segment_test_v2/reduced_order_comparison.csv
+segment_cfd_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/segment_test_v2/segment_cfd_summary.csv
+segment_flow_summary.csv,output/segment_test_v2,flow-rate summary or calculation,area; flow rate,output/segment_test_v2/segment_flow_summary.csv
+segment_geometry.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,flow rate,output/segment_test_v2/segment_geometry.csv
+segment_pressure_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/segment_test_v2/segment_pressure_summary.csv
+segment_resistance_budget.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate,output/segment_test_v2/segment_resistance_budget.csv
+segment_velocity_profile.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,flow rate,output/segment_test_v2/segment_velocity_profile.csv
+segment_velocity_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,flow rate,output/segment_test_v2/segment_velocity_summary.csv
 slice_integrated_quantities.csv,output/segment_test_v2,integrated slice quantities,area; flow rate,output/segment_test_v2/slice_integrated_quantities.csv
 velocity_slice_summary.csv,output/segment_test_v2,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; velocity,output/segment_test_v2/velocity_slice_summary.csv
 segment_cfd_summary.csv,output/segment_test_v2_V1,candidate CFD/ROM post-processing artifact,pressure/kinematic pressure; flow rate; velocity,output/segment_test_v2_V1/segment_cfd_summary.csv

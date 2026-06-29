@@ -1,0 +1,7 @@
+quantity,value,units
+mean curvature κ_mean,0.2668952941894531,1/mm
+max  curvature κ_max,1.249540090560913,1/mm
+std  curvature κ_std,0.231429785490036,1/mm
+arc position of κ_max,14.086544036865234,mm
+min finite Rc,0.8002944588661194,mm
+mean finite Rc,7.8066253662109375,mm

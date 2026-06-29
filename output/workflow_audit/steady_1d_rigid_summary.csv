@@ -1,0 +1,19 @@
+metric,value,units
+Q_CFD_m3_s,1.0251010872495414e-06,m3/s
+Q_1D_solved_m3_s,2.297778921149726e-06,m3/s
+Q_error_pct_vs_CFD,124.15144708459134,%
+DeltaP_CFD_pa,356.36595884094373,Pa
+DeltaP_1D_pa,356.3659588412599,Pa
+DeltaP_1D_at_Qcfd_pa,166.08462540098418,Pa
+DeltaP_poiseuille_at_Qcfd_pa,145.5295448243252,Pa
+R_CFD_pa_s_m3,347639821.35372883,Pa s/m3
+R_1D_pa_s_m3,155091490.98771745,Pa s/m3
+R_1D_at_Qcfd_pa_s_m3,162017802.40679234,Pa s/m3
+R_poiseuille_pa_s_m3,141966042.79759076,Pa s/m3
+R_error_1D_pct_vs_CFD,-55.38730563610851,%
+R_error_1D_at_Qcfd_pct_vs_CFD,-53.39492415572934,%
+R_error_poiseuille_pct_vs_CFD,-59.162893869647306,%
+pressure_rmse_1D_vs_CFD_pa,210.05504081217907,Pa
+pressure_rmse_1D_at_Qcfd_vs_CFD_pa,109.89722899209512,Pa
+pressure_rmse_poiseuille_vs_CFD_pa,125.88984045065864,Pa
+alpha,1.3333333333333333,-

@@ -1,0 +1,7 @@
+pair,Pearson r,p-value,n,interpretation
+Radius vs |dP/ds|,-0.571,1e-06,65,moderate negative
+Curvature vs |dP/ds|,0.2615,0.035386,65,weak / negligible
+Radius vs |U|,-0.8879,0.0,65,strong negative
+Curvature vs |U|,-0.1295,0.303747,65,weak / negligible
+R_Poiseuille local vs |dP/ds|,0.7992,0.0,65,strong positive
+Radius vs R_Poiseuille local,-0.8859,0.0,65,strong negative

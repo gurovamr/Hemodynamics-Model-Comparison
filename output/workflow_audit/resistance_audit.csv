@@ -1,0 +1,5 @@
+method,R_Pa_s_m3,R_mmHg_s_mL,relative_to_CFD_pct
+A: CFD area-averaged DeltaP / mean Q,347639821.3537289,2.6075202993784137,0.0
+B1: Poiseuille integral using CFD surface-cut equivalent radius,134298103.18970758,1.0073213962414873,-61.36860769668352
+B2: Poiseuille integral using ROM ce_radius,168405892.71948218,1.263151563278995,-51.5573641524437
+C: clipped native 0D resistor sum,169773557.3303539,1.2734099198208388,-51.1639498981313

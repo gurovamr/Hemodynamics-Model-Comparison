@@ -1,0 +1,10 @@
+quantity,value,units
+P min (centerline),67.03765106201172,Pa
+P max (centerline),503.5896301269531,Pa
+P drop (max-min),436.5519714355469,Pa
+mean dP/ds,-20363.6328125,Pa/m
+max |dP/ds|,125186.2265625,Pa/m
+arc position of peak |dP/ds|,32.09338493645191,mm
+linear fit R²,0.9374800094933812,-
+RMSE from linear decay,34.23368102928214,Pa
+N valid centerline points,65.0,-

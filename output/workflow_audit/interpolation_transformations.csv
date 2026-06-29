@@ -1,0 +1,10 @@
+stage,transformation,risk
+OpenFOAM pressure,kinematic p multiplied by rho=1060 kg/m3,low; unit conversion is correct
+Slice pressure,ParaView p integral divided by slice area,low; area-weighted cross-sectional average
+Slice flow,integrated velocity vector dotted with supplied normal,low; 0.591% spread across slices
+Centreline pressure,cell-to-point conversion then vtkProbeFilter linear interpolation,medium; centreline pressure is not cross-sectional average
+Invalid CFD probes,invalid mask removes 62/124 main-path points,high if arc length is recomputed after filtering
+Path selection,farthest Euclidean terminal pair plus unweighted graph shortest path,medium; candidate contains a side branch
+Network CFD labels,"bbox overlap selects labels 1,2,8, then full labels are summed",critical; includes geometry outside CFD and side branch label 8
+0D coarsening,harmonic averaging of r^4 within bins,low for total resistance; nodal positions need explicit provenance
+Pressure reference,pressure differences remove OpenFOAM gauge offset,low when the same two sections are used

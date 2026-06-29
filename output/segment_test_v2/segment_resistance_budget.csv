@@ -1,0 +1,7 @@
+quantity,value,units
+Integrated |dP/ds| CFD (numerical trapz),460.3559311162961,Pa
+Integrated Poiseuille dP/ds (local r),186.84597183936364,Pa
+Excess pressure loss (unexplained by Poiseuille),273.5099592769325,Pa
+Fraction unexplained by Poiseuille,0.5941271542080725,-
+Global R_CFD,344849357.6219644,Pa s/m^3
+Fraction excess of R_CFD,59.48680262014574,-
