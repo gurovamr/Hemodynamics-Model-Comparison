@@ -1,0 +1,8 @@
+check,value,criterion,status
+case_loaded,1,equals 1,PASS
+run_completed,1,equals 1,PASS
+one_1d_model,1,equals 1,PASS
+no_0d_models,0,equals 0,PASS
+terminal_flow_mismatch_percent,1.366866487878196,less than 0.5,WARN
+axial_flow_spread_percent,2.284637701837332,less than 0.5,WARN
+maximum_area_change_percent,0.8936359520566484,less than 1.0,PASS

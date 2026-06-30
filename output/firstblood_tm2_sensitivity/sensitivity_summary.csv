@@ -1,0 +1,13 @@
+rank,parameter,TM2_value,Abel_reference_value,pressure_drop_Pa,delta_pressure_drop_Pa,delta_pressure_drop_percent,hydraulic_resistance_Pa_s_m3,delta_resistance_Pa_s_m3,delta_resistance_percent,interpretation
+baseline,TM2 baseline,as generated,not applicable,659.3857299269584,0,0,641242680.4272989,0,0,Five points per edge
+1,division points per edge,5,11 Abel arithmetic mean,383.4218598808366,-275.9638700461218,-41.851659790041,374880684.9862353,-266361995.4410636,-41.537001330861,Numerical resolution dominates the CFD gap
+2,friction multiplier,1.0,2.75,1188.860419049277,529.4746891223186,80.297993346696,1156025906.170547,514783225.7432481,80.280561185024,Abel friction would worsen agreement
+3,kinematic viscosity,3.3e-6,3.0e-6,631.7458819530875,-27.6398479738709,-4.191759891465,614368467.3643717,-26874213.0629272,-4.190958085554,Small fluid-property effect
+4,density,1060,1055,657.2591282585781,-2.1266016683803,-0.322514062167,639164622.7779723,-2078057.6493266,-0.324071940274,Negligible
+5,Young's modulus,1.0e6,1.01005e6 Abel arithmetic mean,661.4699024701258,2.0841725431674,0.316079436406,643246913.4784874,2004233.0511885,0.312562311486,Negligible near Abel mean
+tied,wall thickness ratio h/D,0.1,0.1,659.3857299269584,0,0,641242680.4272989,0,0,Identical substitution
+tied,k1,2.0e6,2.0e6,659.3857299269584,0,0,641242680.4272989,0,0,Identical and inactive for linear wall law
+tied,k2,-2253,-2253,659.3857299269584,0,0,641242680.4272989,0,0,Identical and inactive for linear wall law
+tied,k3,8.65e4,8.65e4,659.3857299269584,0,0,641242680.4272989,0,0,Identical and inactive for linear wall law
+tied,wall law,linear,linear,659.3857299269584,0,0,641242680.4272989,0,0,Identical
+tied,solver,maccormack,maccormack,659.3857299269584,0,0,641242680.4272989,0,0,Identical

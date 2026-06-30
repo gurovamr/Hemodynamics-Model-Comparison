@@ -1,0 +1,16 @@
+metric,value,units
+pressure_drop,166.1217823028273,Pa
+hydraulic_resistance,162645324.06980833,Pa s/m3
+maximum_velocity,0.6178709135484083,m/s
+maximum_configured_CFL,0.9,-
+simulation_time,1.0,s
+late_time_average_window,0.2,s
+points_per_edge,41,-
+number_of_segments,40,-
+unique_axial_grid_points,1601,-
+centreline_arc_length,0.01622110581738165,m
+inlet_flow,1.021374473887895e-06,m3/s
+outlet_flow,1.021360305118674e-06,m3/s
+terminal_flow_mismatch,0.001387235324550235,%
+axial_flow_variation,0.00239727566442745,%
+maximum_area_change,0.1246301442438202,%

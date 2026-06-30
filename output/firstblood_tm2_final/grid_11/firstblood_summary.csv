@@ -1,0 +1,19 @@
+metric,value,units
+run_completed,1,bool
+number_of_1d_models,1,-
+number_of_0d_models,0,-
+number_of_segments,40,-
+centreline_arc_length,0.01622110581738165,m
+density,1060,kg/m3
+kinematic_viscosity,3.3e-06,m2/s
+late_time_averaging_window,0.2,s
+inlet_pressure_gauge,175.1105130996148,Pa
+outlet_pressure_gauge,0,Pa
+pressure_drop,175.1105130996148,Pa
+inlet_flow,1.021374473892729e-06,m3/s
+outlet_flow,1.021160424899922e-06,m3/s
+mean_terminal_flow,1.021267449396325e-06,m3/s
+flow_mismatch_percent,0.02095915158496037,%
+axial_flow_spread_percent,0.03560911051761467,%
+maximum_area_change_percent,0.1313760082295445,%
+hydraulic_resistance,171463913.0064541,Pa s/m3
